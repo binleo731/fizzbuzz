@@ -1,3 +1,4 @@
+import com.thoughtworks.FizzBuzz
 import org.junit.Test
 import kotlin.test.assertEquals
 
@@ -55,5 +56,16 @@ class FizzBuzzTest {
         val result = fizzBuzz.runFizzBuzz(number)
         //then
         assertEquals("FizzBuzz", result)
+    }
+
+    @Test
+    fun `should return number when fizzbuzz run given number not in multiples of 3 and 5 and 7`() {
+        //given
+        val number: Int = 1
+        val fizzBuzz: FizzBuzz = FizzBuzz()
+        //when
+        val result = fizzBuzz.runFizzBuzz(number)
+        //then
+        assertEquals("1", result)
     }
 }

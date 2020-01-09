@@ -1,3 +1,5 @@
+package com.thoughtworks
+
 class FizzBuzz {
     fun runFizzBuzz(number: Int): String {
 
@@ -20,7 +22,7 @@ class FizzBuzz {
         if (number % 7 == 0) {
             return "Whizz"
         }
-        return ""
+        return number.toString()
     }
 
 }
