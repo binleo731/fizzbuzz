@@ -45,4 +45,15 @@ class FizzBuzzTest {
         //then
         assertEquals("FizzBuzzWhizz", result)
     }
+
+    @Test
+    fun `should return FizzBuzz when fizzbuzz run given multiples of 3 and 5`() {
+        //given
+        val number: Int = 15
+        val fizzBuzz: FizzBuzz = FizzBuzz()
+        //when
+        val result = fizzBuzz.runFizzBuzz(number)
+        //then
+        assertEquals("FizzBuzz", result)
+    }
 }
