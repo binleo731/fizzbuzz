@@ -71,6 +71,17 @@ class FizzBuzzTest {
     }
 
     @Test
+    fun `should return fizz when fizzbuzz run given number include 3`() {
+        //given
+        val number: Int = 33
+        val fizzBuzz: FizzBuzz = FizzBuzz()
+        //when
+        val result = fizzBuzz.runFizzBuzz(number)
+        //then
+        assertEquals("Fizz", result)
+    }
+
+    @Test
     fun  `main method run`() {
         val fizzBuzz = FizzBuzz()
         val fizzBuzzMain = FizzBuzzMain(fizzBuzz)

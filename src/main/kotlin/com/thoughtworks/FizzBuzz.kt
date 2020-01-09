@@ -22,6 +22,11 @@ class FizzBuzz {
         if (number % 7 == 0) {
             return "Whizz"
         }
+
+        if (number.toString().contains("3")) {
+            return "Fizz"
+        }
+
         return number.toString()
     }
 
