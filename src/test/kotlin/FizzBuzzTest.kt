@@ -1,4 +1,5 @@
 import com.thoughtworks.FizzBuzz
+import com.thoughtworks.FizzBuzzMain
 import org.junit.Test
 import kotlin.test.assertEquals
 
@@ -67,5 +68,13 @@ class FizzBuzzTest {
         val result = fizzBuzz.runFizzBuzz(number)
         //then
         assertEquals("1", result)
+    }
+
+    @Test
+    fun  `main method run`() {
+        val fizzBuzz = FizzBuzz()
+        val fizzBuzzMain = FizzBuzzMain(fizzBuzz)
+
+        fizzBuzzMain.runFizzBuzz()
     }
 }
